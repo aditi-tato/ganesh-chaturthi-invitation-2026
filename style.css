@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&family=Yatra+One&display=swap');
+
+.font-yatra {
+  font-family: 'Tiro Devanagari Marathi', 'Rozha One', 'Noto Sans Devanagari', sans-serif;
+}
+
+.font-rozha {
+  font-family: 'Rozha One', serif;
+}
+
+/* English Font Families */
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-lora {
+  font-family: 'Lora', serif;
+}
+
+/* Dynamically applied class when switched to English */
+.text-english-body {
+  font-family: 'Lora', serif;
+  font-size: 0.825rem !important; /* Slightly smaller size so full text fits comfortably */
+  line-height: 1.5 !important;
+}
+
+.text-english-title {
+  font-family: 'Cinzel', serif;
+  font-size: 0.95rem !important;
+  letter-spacing: 0.05em;
+}
+
+/* 3D Door Styling with 3.5s Slower Door Opening Transition */
+/* Full-Screen 3D Door Styling */
+.perspective-1000 {
+  perspective: 1200px;
+}
+
+.door-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.door {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  transition: transform 3.5s cubic-bezier(0.25, 1, 0.3, 1);
+  transform-style: preserve-3d;
+  z-index: 20;
+}
+
+.door-left {
+  left: 0;
+  transform-origin: left center;
+}
+
+.door-right {
+  right: 0;
+  transform-origin: right center;
+}
+
+.door-left.open {
+  transform: rotateY(-115deg);
+}
+
+.door-right.open {
+  transform: rotateY(115deg);
+}
+
+/* Dynamic Stages for Ganesha Wrapper */
+
+/* Stage 2: Fullscreen view */
+.ganpati-fullscreen {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  transition: all 2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Stage 3: Circle view at top */
+.ganpati-circle-state {
+  position: relative;
+  width: 13rem; /* 208px */
+  height: 13rem;
+  margin: 0.25rem auto;
+  transition: all 2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.circle-frame {
+  border-radius: 9999px !important;
+  padding: 0.5rem !important;
+  background: linear-gradient(to top right, #f59e0b, #f97316, #fde047) !important;
+}
+
+.circle-inner-frame {
+  border-radius: 9999px !important;
+  background-color: #78350f !important;
+  border: 2px solid #b45309 !important;
+}
+
+/* Slower Fade Transitions */
+.slow-fade-transition {
+  transition: opacity 1.8s ease-out, transform 1.8s ease-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(120, 53, 15, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.5);
+  border-radius: 4px;
+}
