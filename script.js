@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
       invitation: "सालाबादप्रमाणे यंदाही आमच्या घरी आपल्या लाडक्या बाप्पाचे दीड दिवसासाठी आगमन होणार आहे. तरी आपण सर्वांनी सहकुटुंब सहपरिवार येऊन दर्शनाचा लाभ घ्यावा!",
       date: "दिनांक : 14.09.2026",
       host: "निमंत्रक: <span class=\"text-yellow-300\">अदिती तटकरे</span>",
-      address: "पत्ता: C-34, 1/6, शिव सह्याद्री सोसायटी, सेक्टर 24, जुईनगर, नवी मुंबई",
+      address: "पत्ता: C-34, 1/6, शिव सह्याद्री सोसायटी, सेक्टर 24, जुईनगर,   नवी मुंबई",
       mapBtn: "📍 Google Maps वर रस्ता पहा"
     },
     en: {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btnText: "मराठी",
       invitation: "We are delighted to invite you and your family to join us in celebrating Ganesh Chaturthi at our home. This auspicious occasion holds a special place in our hearts, and we would be honored to have your presence grace our festivities.",
       date: "Monday 14th September & Tuesday 15th September",
-      host: "Warm regards, <span class=\"text-yellow-300\">Tatkare Family</span>",
+      host: " <span class=\"text-yellow-300\">Tatkare Family</span>",
       address: "Address: C-34, 1/6, Shiv Sahyadri CHS, Sector 24, Juinagar, Navi Mumbai",
       mapBtn: "📍 View Location on Google Maps"
     }
