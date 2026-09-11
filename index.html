@@ -80,29 +80,19 @@
       </div>
     </div>
 
-    <!-- MAIN INVITATION CONTAINER -->
+  <!-- MAIN INVITATION CONTAINER -->
     <div id="invitation-view" class="w-full flex flex-col items-center justify-start text-center z-10 h-full my-auto transition-opacity duration-1000">
       
-      <!-- TOP CONTROL BAR: MANTRA & LANG TOGGLE -->
-      <div class="w-full flex items-center justify-between pt-2 pb-1 px-2">
-        <div class="w-12"></div> <!-- Spacer for center alignment -->
-        
-        <!-- HEADER MANTRA -->
-        <div id="header-mantra" class="opacity-0 transition-opacity duration-1000">
-          <h3 id="mantra-text" class="font-yatra text-amber-400 text-lg sm:text-xl tracking-widest">॥ श्री गणेशाय नमः ॥</h3>
-        </div>
-
-        <!-- LANGUAGE TOGGLE BUTTON -->
-        <button id="lang-btn" class="bg-yellow-500/20 hover:bg-yellow-500/30 text-yellow-300 border border-yellow-500/40 text-xs font-semibold px-2.5 py-1 rounded-full transition shadow backdrop-blur-sm opacity-0" aria-label="Toggle Language">
-          English
-        </button>
+      <!-- TOP HEADER: MANTRA ONLY -->
+      <div id="header-mantra" class="pt-2 pb-1 opacity-0 transition-opacity duration-1000">
+        <h3 id="mantra-text" class="font-yatra text-amber-400 text-lg sm:text-xl tracking-widest">॥ श्री गणेशाय नमः ॥</h3>
       </div>
 
       <!-- GANPATI IMAGE CONTAINER -->
       <div id="ganpati-wrapper" class="relative z-20 ganpati-fullscreen opacity-0">
         <div id="ganpati-border" class="w-full h-full p-0 border-0 bg-transparent shadow-2xl flex items-center justify-center mx-auto transition-all duration-1000">
           <div id="ganpati-inner-frame" class="w-full h-full overflow-hidden flex items-center justify-center border-0">
-            <img id="ganpati-img" src="ganesha.jpg" alt="Lord Ganesha" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1567591376307-28d84a77b8b7?auto=format&fit=crop&w=800&q=80';">
+            <img id="ganpati-img" src="/assets/ganesha.png" alt="Lord Ganesha" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1567591376307-28d84a77b8b7?auto=format&fit=crop&w=800&q=80';">
           </div>
         </div>
       </div>
@@ -110,7 +100,6 @@
       <!-- INVITATION CARD -->
       <div id="invitation-card" class="bg-amber-900/40 backdrop-blur-md p-5 rounded-2xl border border-yellow-500/30 shadow-xl space-y-3 w-full opacity-0 transform translate-y-6 slow-fade-transition mt-2">
         
-        <!-- Invitation Paragraph -->
         <p id="invitation-text" class="font-rozha text-amber-100 text-base sm:text-lg leading-relaxed text-center">
           सालाबादप्रमाणे यंदाही आमच्या घरी आपल्या लाडक्या बाप्पाचे दीड दिवसासाठी आगमन होणार आहे. तरी आपण सर्वांनी सहकुटुंब सहपरिवार येऊन दर्शनाचा लाभ घ्यावा!
         </p>
@@ -120,13 +109,13 @@
         <!-- Event Details -->
         <div class="space-y-1.5 text-sm text-amber-200">
           <p class="font-bold text-yellow-400 text-base">
-            <span class="inline-block mr-1"></span> <span id="label-date">दिनांक : 14.09.2026</span>
+            <span class="inline-block mr-1">📅</span> <span id="label-date">दिनांक : 14.09.2026</span>
           </p>
           <p class="font-semibold">
-            <span class="inline-block mr-1"></span> <span id="label-host">निमंत्रक: <span class="text-yellow-300">अदिती तटकरे</span></span>
+            <span class="inline-block mr-1">🚩</span> <span id="label-host">निमंत्रक: <span class="text-yellow-300">अदिती तटकरे</span></span>
           </p>
           <p class="text-xs text-amber-200/90 leading-relaxed px-1">
-            <span class="inline-block mr-1">📍</span> <span id="label-address">पत्ता: C-34, 1/6, शिव सह्याद्री सोसायटी, सेक्टर 24, जुईनगर,    नवी मुंबई</span>
+            <span class="inline-block mr-1">📍</span> <span id="label-address">पत्ता: C-34, 1/6, शिव सह्याद्री सोसायटी, सेक्टर 24, जुईनगर, नवी मुंबई</span>
           </p>
         </div>
       </div>
@@ -136,6 +125,13 @@
         <a href="https://maps.google.com/?q=Sector+24+Juinagar+Navi+Mumbai" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-yellow-500/10 hover:bg-yellow-500/20 text-yellow-300 border border-yellow-500/40 px-5 py-2 rounded-full text-xs transition duration-300">
           <span id="btn-map">📍 Google Maps वर रस्ता पहा</span>
         </a>
+      </div>
+
+      <!-- LANGUAGE TOGGLE BUTTON (MOVED BELOW MAP LINK) -->
+      <div class="mt-2.5">
+        <button id="lang-btn" class="bg-yellow-500/20 hover:bg-yellow-500/30 text-yellow-300 border border-yellow-500/40 text-xs font-semibold px-3 py-1 rounded-full transition shadow backdrop-blur-sm opacity-0 slow-fade-transition" aria-label="Toggle Language">
+          English
+        </button>
       </div>
 
     </div>
